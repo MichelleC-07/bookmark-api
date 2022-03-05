@@ -1,0 +1,13 @@
+GET a single bookmark
+---
+tags:
+  - Bookmarks
+paramters:
+  - in: path
+    name: id
+    required: true
+responses:
+  200:
+    description: Bookmark successfully deleted
+  404:
+    description: Bookmark not found

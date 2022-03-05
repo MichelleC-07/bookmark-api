@@ -1,0 +1,31 @@
+UPDATE a single bookmark
+---
+tags:
+  - Bookmarks
+parameters:
+  - name: id
+    in: path
+    required: true
+  - name: url
+    in: body
+  - name: body
+    in: body
+    schema:
+      type: object
+      required:
+        - "url"
+        - "body"
+      properties:
+        url:
+          type: "url"
+          example: "http://www.google.com"
+        body:
+          type: "string"
+          example: My search engine
+responses:
+  200:
+    description: Bookmark update succesful
+  400:
+    description: Fails to update due to bad request data
+  405:
+    description: Method not allowed due to missing parameter input

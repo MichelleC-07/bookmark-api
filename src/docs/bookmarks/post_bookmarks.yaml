@@ -1,0 +1,28 @@
+POST a single bookmarks
+---
+tags:
+  - Bookmarks
+parameters:
+  - name: body
+    description: The body should contain the url and the body of bookmark
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "url"
+        - "body"
+      properties:
+        url:
+          type: "url"
+          example: "https://www.youtube.com/"
+        body:
+          type: "string"
+          example: "My Youtube"
+responses:
+  201:
+    description: Bookmark successfully created
+  409:
+    description: Conflict with input
+  400:
+    description: Fails to post dur to bad request data

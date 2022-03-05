@@ -1,0 +1,13 @@
+GET a list bookmarks
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+responses:
+  200:
+    description: A list of all bookmarks
+  400:
+    description: Fail to retrieve bookmark due to bad request data

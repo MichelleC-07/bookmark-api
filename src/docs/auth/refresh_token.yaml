@@ -1,0 +1,13 @@
+Refresh an access token
+---
+tags:
+  - Authentication
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+responses:
+  200:
+    description: New access token
+  400:
+    description: Fails to refresh token due to bad request data

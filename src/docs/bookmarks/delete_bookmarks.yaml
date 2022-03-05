@@ -1,0 +1,13 @@
+DELETE a single bookmark
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: path
+    name: id
+    required: true
+responses:
+  204:
+    description: Bookmark deleteed and returns no content
+  404:
+    description: Bookmark not found

@@ -1,0 +1,13 @@
+GET stats about bookmark
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+responses:
+  200:
+    description: Bookmark stats
+  401:
+    description: Fails to retrieve item due to authentication error
