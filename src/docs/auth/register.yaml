@@ -2,7 +2,7 @@ User Registration
 ---
 tags:
   - Authentication
-parametes:
+parameters:
   - name: body
     description: The body should contain the user registration data
     in: body
